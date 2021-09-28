@@ -1,0 +1,37 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.43</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\Debug/6.3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\Debug/6.3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\Debug/6.3.map</FILE>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\Debug/6.3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <_tmp_><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>8</LINE></_tmp_>
+  <reading><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>27</LINE></reading>
+  <scan_keypad_rising_edge><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>130</LINE></scan_keypad_rising_edge>
+  <keypad_to_ascii><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>158</LINE></keypad_to_ascii>
+  <read2nd><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>38</LINE></read2nd>
+  <leds><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>48</LINE></leds>
+  <wrong><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>60</LINE></wrong>
+  <wait_msec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>78</LINE></wait_msec>
+  <on_off><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>63</LINE></on_off>
+  <wait_usec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>90</LINE></wait_usec>
+  <scan_row><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>99</LINE></scan_row>
+  <back><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>101</LINE></back>
+  <scan_keypad><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg6\6.3\6.3\6.3.asm</FILE><LINE>112</LINE></scan_keypad>
+ </LABELS>
+</ASSEMBLER_INFO>

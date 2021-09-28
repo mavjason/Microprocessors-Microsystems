@@ -1,0 +1,273 @@
+
+6.2.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000001c0  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          00000002  00800060  00800060  00000234  2**0
+                  ALLOC
+  2 .stab         000006cc  00000000  00000000  00000234  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  3 .stabstr      00000085  00000000  00000000  00000900  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_aranges 00000020  00000000  00000000  00000985  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_pubnames 00000030  00000000  00000000  000009a5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   0000014d  00000000  00000000  000009d5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 0000008c  00000000  00000000  00000b22  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000001a3  00000000  00000000  00000bae  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000020  00000000  00000000  00000d54  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000000cb  00000000  00000000  00000d74  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_pubtypes 0000001e  00000000  00000000  00000e3f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+   8:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+   c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  10:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  14:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  18:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  1c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  20:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  24:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  28:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  2c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  30:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  34:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  38:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  3c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  40:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  44:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  48:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  4c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  50:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d4 e0       	ldi	r29, 0x04	; 4
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_clear_bss>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	01 c0       	rjmp	.+2      	; 0x6a <.do_clear_bss_start>
+
+00000068 <.do_clear_bss_loop>:
+  68:	1d 92       	st	X+, r1
+
+0000006a <.do_clear_bss_start>:
+  6a:	a2 36       	cpi	r26, 0x62	; 98
+  6c:	b1 07       	cpc	r27, r17
+  6e:	e1 f7       	brne	.-8      	; 0x68 <.do_clear_bss_loop>
+  70:	0e 94 3e 00 	call	0x7c	; 0x7c <main>
+  74:	0c 94 de 00 	jmp	0x1bc	; 0x1bc <_exit>
+
+00000078 <__bad_interrupt>:
+  78:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000007c <main>:
+﻿#include <avr/io.h>
+unsigned char input ,output;
+
+void main(){
+  7c:	df 93       	push	r29
+  7e:	cf 93       	push	r28
+  80:	cd b7       	in	r28, 0x3d	; 61
+  82:	de b7       	in	r29, 0x3e	; 62
+  84:	2b 97       	sbiw	r28, 0x0b	; 11
+  86:	0f b6       	in	r0, 0x3f	; 63
+  88:	f8 94       	cli
+  8a:	de bf       	out	0x3e, r29	; 62
+  8c:	0f be       	out	0x3f, r0	; 63
+  8e:	cd bf       	out	0x3d, r28	; 61
+	DDRA = 0x00;	//Port A as input
+  90:	8a e3       	ldi	r24, 0x3A	; 58
+  92:	90 e0       	ldi	r25, 0x00	; 0
+  94:	fc 01       	movw	r30, r24
+  96:	10 82       	st	Z, r1
+	DDRC = 0xFF;	//Port C as output
+  98:	84 e3       	ldi	r24, 0x34	; 52
+  9a:	90 e0       	ldi	r25, 0x00	; 0
+  9c:	2f ef       	ldi	r18, 0xFF	; 255
+  9e:	fc 01       	movw	r30, r24
+  a0:	20 83       	st	Z, r18
+	output = 0x00;
+  a2:	10 92 60 00 	sts	0x0060, r1
+	PORTC = output;	//Initialise Port C
+  a6:	85 e3       	ldi	r24, 0x35	; 53
+  a8:	90 e0       	ldi	r25, 0x00	; 0
+  aa:	20 91 60 00 	lds	r18, 0x0060
+  ae:	fc 01       	movw	r30, r24
+  b0:	20 83       	st	Z, r18
+	unsigned char A, B, C, D, E, F0, F1, F2;
+	unsigned char temp1, temp2, temp3;
+	while(1){
+		input = PINA;
+  b2:	89 e3       	ldi	r24, 0x39	; 57
+  b4:	90 e0       	ldi	r25, 0x00	; 0
+  b6:	fc 01       	movw	r30, r24
+  b8:	80 81       	ld	r24, Z
+  ba:	80 93 61 00 	sts	0x0061, r24
+		A = input & 0x01;
+  be:	80 91 61 00 	lds	r24, 0x0061
+  c2:	81 70       	andi	r24, 0x01	; 1
+  c4:	89 83       	std	Y+1, r24	; 0x01
+		B = (input & 0x02)>>1;
+  c6:	80 91 61 00 	lds	r24, 0x0061
+  ca:	88 2f       	mov	r24, r24
+  cc:	90 e0       	ldi	r25, 0x00	; 0
+  ce:	82 70       	andi	r24, 0x02	; 2
+  d0:	90 70       	andi	r25, 0x00	; 0
+  d2:	95 95       	asr	r25
+  d4:	87 95       	ror	r24
+  d6:	8a 83       	std	Y+2, r24	; 0x02
+		C = (input & 0x04)>>2;
+  d8:	80 91 61 00 	lds	r24, 0x0061
+  dc:	88 2f       	mov	r24, r24
+  de:	90 e0       	ldi	r25, 0x00	; 0
+  e0:	84 70       	andi	r24, 0x04	; 4
+  e2:	90 70       	andi	r25, 0x00	; 0
+  e4:	95 95       	asr	r25
+  e6:	87 95       	ror	r24
+  e8:	95 95       	asr	r25
+  ea:	87 95       	ror	r24
+  ec:	8b 83       	std	Y+3, r24	; 0x03
+		D = (input & 0x08)>>3;
+  ee:	80 91 61 00 	lds	r24, 0x0061
+  f2:	88 2f       	mov	r24, r24
+  f4:	90 e0       	ldi	r25, 0x00	; 0
+  f6:	88 70       	andi	r24, 0x08	; 8
+  f8:	90 70       	andi	r25, 0x00	; 0
+  fa:	95 95       	asr	r25
+  fc:	87 95       	ror	r24
+  fe:	95 95       	asr	r25
+ 100:	87 95       	ror	r24
+ 102:	95 95       	asr	r25
+ 104:	87 95       	ror	r24
+ 106:	8c 83       	std	Y+4, r24	; 0x04
+		E = (input & 0x10)>>4;
+ 108:	80 91 61 00 	lds	r24, 0x0061
+ 10c:	88 2f       	mov	r24, r24
+ 10e:	90 e0       	ldi	r25, 0x00	; 0
+ 110:	80 71       	andi	r24, 0x10	; 16
+ 112:	90 70       	andi	r25, 0x00	; 0
+ 114:	95 95       	asr	r25
+ 116:	87 95       	ror	r24
+ 118:	95 95       	asr	r25
+ 11a:	87 95       	ror	r24
+ 11c:	95 95       	asr	r25
+ 11e:	87 95       	ror	r24
+ 120:	95 95       	asr	r25
+ 122:	87 95       	ror	r24
+ 124:	8d 83       	std	Y+5, r24	; 0x05
+		temp1 = A & B & C;
+ 126:	99 81       	ldd	r25, Y+1	; 0x01
+ 128:	8a 81       	ldd	r24, Y+2	; 0x02
+ 12a:	98 23       	and	r25, r24
+ 12c:	8b 81       	ldd	r24, Y+3	; 0x03
+ 12e:	89 23       	and	r24, r25
+ 130:	8e 83       	std	Y+6, r24	; 0x06
+		temp2 = C & D;
+ 132:	9b 81       	ldd	r25, Y+3	; 0x03
+ 134:	8c 81       	ldd	r24, Y+4	; 0x04
+ 136:	89 23       	and	r24, r25
+ 138:	8f 83       	std	Y+7, r24	; 0x07
+		temp3 = D & E;
+ 13a:	9c 81       	ldd	r25, Y+4	; 0x04
+ 13c:	8d 81       	ldd	r24, Y+5	; 0x05
+ 13e:	89 23       	and	r24, r25
+ 140:	88 87       	std	Y+8, r24	; 0x08
+		temp2 = temp1 | temp2 | temp3;
+ 142:	9e 81       	ldd	r25, Y+6	; 0x06
+ 144:	8f 81       	ldd	r24, Y+7	; 0x07
+ 146:	98 2b       	or	r25, r24
+ 148:	88 85       	ldd	r24, Y+8	; 0x08
+ 14a:	89 2b       	or	r24, r25
+ 14c:	8f 83       	std	Y+7, r24	; 0x07
+		F0 = ~temp2;
+ 14e:	8f 81       	ldd	r24, Y+7	; 0x07
+ 150:	80 95       	com	r24
+ 152:	89 87       	std	Y+9, r24	; 0x09
+		temp2 = (~D) & (~E);
+ 154:	9c 81       	ldd	r25, Y+4	; 0x04
+ 156:	8d 81       	ldd	r24, Y+5	; 0x05
+ 158:	89 2b       	or	r24, r25
+ 15a:	80 95       	com	r24
+ 15c:	8f 83       	std	Y+7, r24	; 0x07
+		F1 = temp1 | temp2;
+ 15e:	9e 81       	ldd	r25, Y+6	; 0x06
+ 160:	8f 81       	ldd	r24, Y+7	; 0x07
+ 162:	89 2b       	or	r24, r25
+ 164:	8a 87       	std	Y+10, r24	; 0x0a
+		F2 = F0 | F1;
+ 166:	99 85       	ldd	r25, Y+9	; 0x09
+ 168:	8a 85       	ldd	r24, Y+10	; 0x0a
+ 16a:	89 2b       	or	r24, r25
+ 16c:	8b 87       	std	Y+11, r24	; 0x0b
+		F0 = F0 & 0x01;
+ 16e:	89 85       	ldd	r24, Y+9	; 0x09
+ 170:	81 70       	andi	r24, 0x01	; 1
+ 172:	89 87       	std	Y+9, r24	; 0x09
+		F1 = F1 & 0x01;
+ 174:	8a 85       	ldd	r24, Y+10	; 0x0a
+ 176:	81 70       	andi	r24, 0x01	; 1
+ 178:	8a 87       	std	Y+10, r24	; 0x0a
+		F2 = F2 & 0x01;
+ 17a:	8b 85       	ldd	r24, Y+11	; 0x0b
+ 17c:	81 70       	andi	r24, 0x01	; 1
+ 17e:	8b 87       	std	Y+11, r24	; 0x0b
+		F0 = F0 << 5;
+ 180:	89 85       	ldd	r24, Y+9	; 0x09
+ 182:	82 95       	swap	r24
+ 184:	88 0f       	add	r24, r24
+ 186:	80 7e       	andi	r24, 0xE0	; 224
+ 188:	89 87       	std	Y+9, r24	; 0x09
+		F1 = F1 << 6;
+ 18a:	8a 85       	ldd	r24, Y+10	; 0x0a
+ 18c:	82 95       	swap	r24
+ 18e:	88 0f       	add	r24, r24
+ 190:	88 0f       	add	r24, r24
+ 192:	80 7c       	andi	r24, 0xC0	; 192
+ 194:	8a 87       	std	Y+10, r24	; 0x0a
+		F2 = F2 << 7;
+ 196:	8b 85       	ldd	r24, Y+11	; 0x0b
+ 198:	87 95       	ror	r24
+ 19a:	88 27       	eor	r24, r24
+ 19c:	87 95       	ror	r24
+ 19e:	8b 87       	std	Y+11, r24	; 0x0b
+		output = F0 | F1 | F2;
+ 1a0:	99 85       	ldd	r25, Y+9	; 0x09
+ 1a2:	8a 85       	ldd	r24, Y+10	; 0x0a
+ 1a4:	98 2b       	or	r25, r24
+ 1a6:	8b 85       	ldd	r24, Y+11	; 0x0b
+ 1a8:	89 2b       	or	r24, r25
+ 1aa:	80 93 60 00 	sts	0x0060, r24
+		PORTC = output;
+ 1ae:	85 e3       	ldi	r24, 0x35	; 53
+ 1b0:	90 e0       	ldi	r25, 0x00	; 0
+ 1b2:	20 91 60 00 	lds	r18, 0x0060
+ 1b6:	fc 01       	movw	r30, r24
+ 1b8:	20 83       	st	Z, r18
+	}
+ 1ba:	7b cf       	rjmp	.-266    	; 0xb2 <main+0x36>
+
+000001bc <_exit>:
+ 1bc:	f8 94       	cli
+
+000001be <__stop_program>:
+ 1be:	ff cf       	rjmp	.-2      	; 0x1be <__stop_program>

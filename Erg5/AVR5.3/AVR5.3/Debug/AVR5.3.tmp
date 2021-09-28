@@ -1,0 +1,35 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.43</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\Debug/AVR5.3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\Debug/AVR5.3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\Debug/AVR5.3.map</FILE>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\Debug/AVR5.3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</FILE><LINE>12</LINE></reset>
+  <interrupt1><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</FILE><LINE>77</LINE></interrupt1>
+  <ISR_TIMER1_OVF><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</FILE><LINE>71</LINE></ISR_TIMER1_OVF>
+  <start><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</FILE><LINE>38</LINE></start>
+  <next><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</FILE><LINE>59</LINE></next>
+  <wait_msec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</FILE><LINE>116</LINE></wait_msec>
+  <loop1><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</FILE><LINE>64</LINE></loop1>
+  <check><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</FILE><LINE>80</LINE></check>
+  <continue><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</FILE><LINE>106</LINE></continue>
+  <continue2><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</FILE><LINE>108</LINE></continue2>
+  <wait_usec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.3\AVR5.3\AVR5.3.asm</FILE><LINE>128</LINE></wait_usec>
+ </LABELS>
+</ASSEMBLER_INFO>

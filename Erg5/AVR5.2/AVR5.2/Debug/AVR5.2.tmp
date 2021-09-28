@@ -1,0 +1,33 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.43</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\AVR5.2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\Debug/AVR5.2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\Debug/AVR5.2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\Debug/AVR5.2.map</FILE>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\Debug/AVR5.2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\AVR5.2.asm</FILE><LINE>18</LINE></reset>
+  <ISR0><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\AVR5.2.asm</FILE><LINE>66</LINE></ISR0>
+  <count><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\AVR5.2.asm</FILE><LINE>37</LINE></count>
+  <wait_msec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\AVR5.2.asm</FILE><LINE>45</LINE></wait_msec>
+  <wait_usec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\AVR5.2.asm</FILE><LINE>57</LINE></wait_usec>
+  <check><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\AVR5.2.asm</FILE><LINE>71</LINE></check>
+  <loop1><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\AVR5.2.asm</FILE><LINE>84</LINE></loop1>
+  <not_on><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\AVR5.2.asm</FILE><LINE>88</LINE></not_on>
+  <leave><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg5\AVR5.2\AVR5.2\AVR5.2.asm</FILE><LINE>96</LINE></leave>
+ </LABELS>
+</ASSEMBLER_INFO>
