@@ -1,0 +1,40 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.43</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\Debug/8.1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\Debug/8.1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\Debug/8.1.map</FILE>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\Debug/8.1.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>8</LINE></main>
+  <my_routine><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>133</LINE></my_routine>
+  <wait_msec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>19</LINE></wait_msec>
+  <wait_usec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>31</LINE></wait_usec>
+  <one_wire_reset><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>40</LINE></one_wire_reset>
+  <one_wire_receive_bit><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>62</LINE></one_wire_receive_bit>
+  <one_wire_transmit_bit><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>83</LINE></one_wire_transmit_bit>
+  <one_wire_receive_byte><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>105</LINE></one_wire_receive_byte>
+  <loop_><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>108</LINE></loop_>
+  <one_wire_transmit_byte><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>119</LINE></one_wire_transmit_byte>
+  <_one_more_><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>122</LINE></_one_more_>
+  <not_connected><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>164</LINE></not_connected>
+  <not_ready><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>141</LINE></not_ready>
+  <wake_up><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>145</LINE></wake_up>
+  <cont2><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>161</LINE></cont2>
+  <show_temperature><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg8\8.1\8.1\8.1.asm</FILE><LINE>167</LINE></show_temperature>
+ </LABELS>
+</ASSEMBLER_INFO>

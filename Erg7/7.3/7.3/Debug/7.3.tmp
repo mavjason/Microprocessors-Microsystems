@@ -1,0 +1,40 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.43</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\Debug/7.3.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\Debug/7.3.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\Debug/7.3.map</FILE>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\Debug/7.3.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>12</LINE></reset>
+  <main><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>22</LINE></main>
+  <lcd_init><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>218</LINE></lcd_init>
+  <display_init_clk><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>45</LINE></display_init_clk>
+  <start><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>28</LINE></start>
+  <next><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>34</LINE></next>
+  <inc_clock_and_display><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>75</LINE></inc_clock_and_display>
+  <lcd_display><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>202</LINE></lcd_display>
+  <display><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>86</LINE></display>
+  <wait_msec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>163</LINE></wait_msec>
+  <hex_to_bcd><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>146</LINE></hex_to_bcd>
+  <loopA><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>150</LINE></loopA>
+  <case1><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>155</LINE></case1>
+  <wait_usec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>175</LINE></wait_usec>
+  <write_2_nibbles><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>184</LINE></write_2_nibbles>
+  <lcd_command><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.3\7.3\7.3.asm</FILE><LINE>210</LINE></lcd_command>
+ </LABELS>
+</ASSEMBLER_INFO>

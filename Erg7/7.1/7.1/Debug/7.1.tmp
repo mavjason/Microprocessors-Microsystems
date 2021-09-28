@@ -1,0 +1,50 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.43</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\Debug/7.1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\Debug/7.1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\Debug/7.1.map</FILE>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\Debug/7.1.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>16</LINE></main>
+  <ISR_TIMER1_OVF><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>143</LINE></ISR_TIMER1_OVF>
+  <_tmp_><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>12</LINE></_tmp_>
+  <initialize><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>36</LINE></initialize>
+  <lcd_init><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>239</LINE></lcd_init>
+  <read_sensors><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>39</LINE></read_sensors>
+  <lcd_command><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>231</LINE></lcd_command>
+  <read_shift><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>55</LINE></read_shift>
+  <scan_keypad_rising_edge><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>309</LINE></scan_keypad_rising_edge>
+  <keypad_to_ascii><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>335</LINE></keypad_to_ascii>
+  <lcd_data><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>223</LINE></lcd_data>
+  <read1st><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>71</LINE></read1st>
+  <read2nd><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>85</LINE></read2nd>
+  <wrong><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>121</LINE></wrong>
+  <right><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>104</LINE></right>
+  <wait_msec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>184</LINE></wait_msec>
+  <ALARM_O><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>167</LINE></ALARM_O>
+  <loop_forever><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>118</LINE></loop_forever>
+  <again><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>129</LINE></again>
+  <leave><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>164</LINE></leave>
+  <on_off><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>152</LINE></on_off>
+  <wait_usec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>196</LINE></wait_usec>
+  <write_2_nibbles><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>205</LINE></write_2_nibbles>
+  <scan_row><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>277</LINE></scan_row>
+  <back><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>279</LINE></back>
+  <scan_keypad><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.1\7.1\7.1.asm</FILE><LINE>290</LINE></scan_keypad>
+ </LABELS>
+</ASSEMBLER_INFO>

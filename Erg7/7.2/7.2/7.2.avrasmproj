@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>5.0</ProjectVersion>
+    <ProjectGuid>{6c820aec-32ac-4f26-a8b7-e2716ff3432f}</ProjectGuid>
+    <avrdeviceseries>none</avrdeviceseries>
+    <avrdevice>ATmega16</avrdevice>
+    <OutputFile>$(MSBuildProjectName).obj</OutputFile>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <UseGlobalToolchain>True</UseGlobalToolchain>
+    <ToolchainDirPath>
+    </ToolchainDirPath>
+    <MakeDirPath>
+    </MakeDirPath>
+    <GlobalToolchainPath>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler</GlobalToolchainPath>
+    <AssemblyName>7.2</AssemblyName>
+    <Name>7.2</Name>
+    <RootNamespace>7.2</RootNamespace>
+    <EntryFile>$(MSBuildProjectDirectory)\7.2.asm</EntryFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrAssembler>
+  <avrasm.assembler.general.IncludeFile>m16def.inc</avrasm.assembler.general.IncludeFile>
+</AvrAssembler>
+    </ToolchainSettings>
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>False</GenerateEepFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrAssembler>
+  <avrasm.assembler.general.IncludeFile>m16def.inc</avrasm.assembler.general.IncludeFile>
+</AvrAssembler>
+    </ToolchainSettings>
+    <GenerateHexFile>True</GenerateHexFile>
+    <GenerateMapFile>True</GenerateMapFile>
+    <GenerateListFile>True</GenerateListFile>
+    <GenerateEepFile>False</GenerateEepFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="7.2.asm">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\Vs\AvrAssembler.targets" />
+</Project>

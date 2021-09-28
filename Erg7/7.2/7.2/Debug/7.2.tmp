@@ -1,0 +1,45 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.43</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\Debug/7.2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\Debug/7.2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\Debug/7.2.map</FILE>
+  <FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\Debug/7.2.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>13</LINE></reset>
+  <main><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>22</LINE></main>
+  <lcd_init><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>177</LINE></lcd_init>
+  <loopA><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>33</LINE></loopA>
+  <pr0><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>40</LINE></pr0>
+  <lcd_data><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>161</LINE></lcd_data>
+  <step><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>43</LINE></step>
+  <print0><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>114</LINE></print0>
+  <positive><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>62</LINE></positive>
+  <BCD><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>65</LINE></BCD>
+  <loopB><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>69</LINE></loopB>
+  <case1><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>74</LINE></case1>
+  <loopC><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>77</LINE></loopC>
+  <case2><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>82</LINE></case2>
+  <dig2><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>94</LINE></dig2>
+  <show><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>99</LINE></show>
+  <dig1><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>104</LINE></dig1>
+  <wait_msec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>122</LINE></wait_msec>
+  <wait_usec><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>134</LINE></wait_usec>
+  <write_2_nibbles><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>143</LINE></write_2_nibbles>
+  <lcd_command><FILE>C:\Users\theovaka\Documents\ece\ΡΟΗ Υ\Εργαστήριο Μικροϋπολογιστών\Erg7\7.2\7.2\7.2.asm</FILE><LINE>169</LINE></lcd_command>
+ </LABELS>
+</ASSEMBLER_INFO>
