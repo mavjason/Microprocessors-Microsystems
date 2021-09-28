@@ -1,0 +1,64 @@
+IN 10H
+MVI A,0DH
+SIM
+EI
+LXI B,0600H	;In register pair B-C store the delay
+LXI H,0941H         
+MVI M,10H 	;Store 10H in memory addresses 0941-0945H
+INX H		;so that the 5 left 7-segment displays are always Off
+MVI M,10H	;and only the rigth one displays the number of interrupts
+INX H
+MVI M,10H
+INX H
+MVI M,10H
+INX H
+MVI M,10H
+INX H		;Because every press of the interrupt button creates two
+MVI M,01H	;interrupts we ignore half of them based on the flag in
+MVI A,0DH	;memory address 0946H
+SIM
+MVI D,00H	;Counter initialisation
+MVI E,00H
+LXI H,0940H	;Store in register pair H-L the address 0940H
+START:
+MOV A,D
+ANI 0FH	;Isolate the 4 LSBs
+RRC		;Rotate them to become the 4 MSBs
+RRC
+RRC
+RRC
+CMA
+STA 3000H	;Display the counter
+INR D		;Increment counter for next iteration
+DI
+CALL DELB	;Call routinne for a delay of 0.1s 
+EI
+JMP START	;Loop forever
+
+INTR_ROUTINE:
+DI
+LDA 2000H
+RRC
+JNC RETURN	;If LSB switch is OFF ignore the interrupt
+LXI H,0946H
+MOV A,M
+XRI 01H	;Change flag for next interrupt
+MOV M,A
+CPI 00H
+JNZ RETURN	;Ignore half inrerrupts
+INR E		;Increment the counter of interrupts
+MOV A,E
+ANI 0FH	;Isolate 4 LSBs to display the result modulo 16
+MOV E,A
+LXI H,0940H
+MOV M,E
+PUSH D
+LXI D,0940H	;Store in register pair D-E the address of the message
+CALL STDM	;Move the message in the rigth address for display
+CALL DCD	;Display the counter in rigth 7-segment display
+POP D
+RETURN:
+EI
+RET
+
+END

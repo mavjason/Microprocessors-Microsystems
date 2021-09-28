@@ -1,0 +1,30 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.43</VERSION>
+ <DEVICE>ATmega16</DEVICE>
+ <WORKING_DIR>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\AVRAssembler1.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Studio 5.0\avrassembler\include\m16def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\Debug/AVRAssembler1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\Debug/AVRAssembler1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\Debug/AVRAssembler1.map</FILE>
+  <FILE>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\Debug/AVRAssembler1.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\AVRAssembler1.asm</FILE><LINE>21</LINE></start>
+  <wait_msec><FILE>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\AVRAssembler1.asm</FILE><LINE>51</LINE></wait_msec>
+  <Move_Left><FILE>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\AVRAssembler1.asm</FILE><LINE>40</LINE></Move_Left>
+  <right_border><FILE>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\AVRAssembler1.asm</FILE><LINE>35</LINE></right_border>
+  <left_border><FILE>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\AVRAssembler1.asm</FILE><LINE>46</LINE></left_border>
+  <wait_usec><FILE>C:\Users\theovaka\Documents\AVRStudio\AVRAssembler1\AVRAssembler1\AVRAssembler1.asm</FILE><LINE>63</LINE></wait_usec>
+ </LABELS>
+</ASSEMBLER_INFO>

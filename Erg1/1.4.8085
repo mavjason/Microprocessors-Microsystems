@@ -1,0 +1,72 @@
+IN 10H
+MVI A,0DH
+SIM
+EI
+MVI D,00H	;The LSB of register D determines the move of wagon left or right
+MVI E,01H	;Initialise wagon position in LSB
+MOV A,E	
+CMA
+OUT 30H	;Display wagon position
+LXI B,0FFFH	;In register pair B-C store the delay of a single move
+LXI H,0900H	;Because every press of the interrupt button creates two
+MVI M,01H	;interrupts we ignore half of them based on the flag in
+		;memory address 0900H
+START:
+IN 20H		;Read input switch
+RRC
+JNC START	;If LSB is OFF wait
+MOV A,D
+RRC
+JNC MOVE_LEFT	;Check if wagon is moving left or right
+MOVE_RIGHT:
+MOV A,E
+RRC		;Move wagon one position right
+CPI 80H	;Check if previous position was the right border
+JZ RIGHT_BORDER
+MOV E,A	;If no, current position is acceptable
+JMP CONTINUE
+RIGHT_BORDER:	;Else move wagon two positions left
+RLC
+RLC
+MOV E,A	;Save current position
+MVI D,00H	;Change wagon direction
+JMP CONTINUE
+MOVE_LEFT:
+MOV A,E
+RLC		;Move wagon one position left
+CPI 01H	;Check if previous position was the left border
+JZ LEFT_BORDER
+MOV E,A	;If no, current position is acceptable
+JMP CONTINUE
+LEFT_BORDER:	;Else move wagon two positions right
+RRC
+RRC
+MOV E,A	;Save current position
+MVI D,01H	;Change wagon direction
+CONTINUE:
+MOV A,E
+CMA
+OUT 30H	;Display wagon current position
+DI
+CALL DELB	;Create a delay of 0.5s
+EI
+JMP START	;Loop forever
+
+INTR_ROUTINE:
+DI
+IN 20H
+RRC
+JNC RETURN	;If LSB switch is OFF ignore the interrupt
+LXI H,0900H
+MOV A,M
+XRI 01H	;Change flag for next interrupt
+MOV M,A
+CPI 00H
+JNZ RETURN	;Ignore half inrerrupts
+MOV A,D	;If LSB switch is ON change wagon direction
+XRI 01H
+MOV D,A
+RETURN:
+EI
+RET
+END

@@ -1,0 +1,31 @@
+read macro
+    mov ah,08h
+    int 21h
+endm
+
+print macro char
+    push ax
+    push dx
+    mov dl,char
+    mov ah,02h
+    int 21h
+    pop dx
+    pop ax
+endm
+
+print_str macro string 
+    push dx
+    push ax
+    mov dx,offset string
+    mov ah,09h
+    int 21h    
+    pop ax
+    pop dx
+endm
+
+exit macro
+    mov ax,4c00h
+    int 21h
+endm       
+ 
+ 

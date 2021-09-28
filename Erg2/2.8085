@@ -1,0 +1,137 @@
+;The message shown in the 6 7-segment displays is stored in memory
+;addresses 0900H-0905H
+;The accumulator is stored in memory address 0910H
+;The result after each operation is stored in memory address 0906H
+
+IN 10H
+CALL CLEAN_DISPLAY
+START:
+CALL READ_INPUT
+
+LOOP1:		;Wait until user presses A or F
+CALL KIND
+CPI 0AH
+JZ ADD
+CPI 0FH
+JZ MUL
+JMP LOOP1
+
+ADD:
+MOV A,B
+ADD C		;A = B + C
+JMP DISPLAY_RESULT
+
+MUL:
+MOV A,B
+MUL_LOOP:
+ADD B
+DCR C
+JNZ MUL_LOOP
+SUB B		;A = B * C
+
+DISPLAY_RESULT:
+LXI H,0906H	
+MOV M,A	;Store result in memory
+ANI 0FH	;Create two hex digits from result
+MOV B,A
+MOV A,M
+ANI F0H
+RRC
+RRC
+RRC
+RRC
+LXI H,0900H
+MOV M,B
+INX H
+MOV M,A
+LXI D,0900H
+CALL STDM
+CALL DCD	;Display result
+JMP START	;Loop forever
+
+;;;;;ROUTINES;;;;;
+
+READ_INPUT:
+CALL KIND	;Read from keyboard
+CPI 83H	;Check for INCR press
+JZ ACCUM
+CPI 81H	;Check for DECR press
+JZ ERASE
+JMP CONTINUE
+
+ACCUM:
+LXI H,0906H
+MOV A,M	;Load current result from memory
+LXI H,0910H
+MOV B,M	;Load accumulator from memory
+ADD B		;Add result to accumulator
+MOV M,A	;Store accumulator
+ANI 0FH	;Create two hex digits from accumulator
+MOV B,A
+MOV A,M
+ANI F0H
+RLC
+RLC
+RLC
+RLC
+LXI H,0902H	;Save hex digits to memory for display
+MOV M,B	
+INX H
+MOV M,A
+LXI D,0900H
+CALL STDM
+CALL DCD	;Display change in accumulator
+CALL KIND	;Read from keyboard
+CPI 81H	;Check again for DECR press
+JNZ CONTINUE
+
+ERASE:
+LXI H,0910H
+MVI M,00H	;Reinitialise accumulator
+LXI H,0902H
+MVI M,00H
+INX H
+MVI M,00H
+LXI D,0900H
+CALL STDM
+CALL DCD	;Display change in accumulator
+CALL KIND	;Read first hex digit
+
+CONTINUE:
+LXI H,0905H	;Store the input hex digits in memory addresses 0904-0905H
+MOV B,A	;Store first hex digit in register B and memory
+MOV M,A
+DCX H
+CALL KIND	;Read second hex digit
+MOV C,A	;Store second hex digit in register C and memory
+MOV M,A
+LXI H,0900H	;After input of two new hex digits erase previous result 
+MVI M,10H
+INX H
+MVI M,10H
+LXI D,0900H	;Move the address of the message in register pair D-E
+CALL STDM	;Move the message in the rigth position for display
+CALL DCD	;Display input hex digits
+RET
+
+;;;;;;;;;;;;;;;;;;;;;;;
+
+CLEAN_DISPLAY:
+LXI H,0900H	;Store 10H in memory addresses 0900-0905H so that
+MVI M,10H	;the 7-segment displays are initially off
+INX H
+MVI M,10H
+INX H
+MVI M,10H
+INX H
+MVI M,10H
+INX H
+MVI M,10H
+INX H
+MVI M,10H
+LXI D,0900H
+CALL STDM
+CALL DCD
+RET
+
+END

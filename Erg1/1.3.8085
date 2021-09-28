@@ -1,0 +1,43 @@
+IN 10H
+LOOP1:
+CALL KIND	;Read first hex digit
+RLC		;Rotate left 4 times
+RLC
+RLC
+RLC
+MOV B,A
+CALL KIND	;Read second hex digit
+ADD B		;Create input hex number
+;MOV B,A	;Store it in register B
+LXI D,0000H	;Initialise hundreds, tens = 0
+LOOP2:		;Convert hex number to decimal
+SUI 64H	;Subtract 1 hundred
+JC CASE1
+INR D		;hundreds++
+JMP LOOP2
+CASE1:	
+ADI 64H	;Restore one extra subtraction
+LOOP3:
+SUI 0AH	;Subtract 1 ten
+JC CASE2
+INR E		;tens++
+JMP LOOP3
+CASE2:
+ADI 0AH	;Restore one extra subtraction
+LXI H,0900H	;Prepare the message of the 6 7-segment displays
+MVI M,10H	;The hex code 10H represents space in 7-segment display
+INX H
+MVI M,10H
+INX H
+MVI M,10H
+INX H
+MOV M,A	;Store units
+INX H
+MOV M,E	;Store tens
+INX H
+MOV M,D	;Store hundreds
+LXI D,0900H	;Store the address of the message in regester pair D-E
+CALL STDM	;Move the message in the proper address for display
+CALL DCD	;Display the result
+JMP LOOP1	;Loop forever
+END
